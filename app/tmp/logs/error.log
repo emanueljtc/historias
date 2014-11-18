@@ -3601,3 +3601,123 @@ Stack Trace:
 #3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
 #4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-11-17 17:28:59 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Grupos/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Grupos/index.ctp',
+)
+Request URL: /historias/grupos
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-17 17:29:27 Error: [MissingControllerException] Controller class PacienteController could not be found.
+Exception Attributes: array (
+  'class' => 'PacienteController',
+  'plugin' => NULL,
+)
+Request URL: /historias/paciente
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 17:29:33 Error: [MissingControllerException] Controller class PacientesController could not be found.
+Exception Attributes: array (
+  'class' => 'PacientesController',
+  'plugin' => NULL,
+)
+Request URL: /historias/pacientes
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 17:29:49 Error: [MissingControllerException] Controller class PacienteController could not be found.
+Exception Attributes: array (
+  'class' => 'PacienteController',
+  'plugin' => NULL,
+)
+Request URL: /historias/paciente
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 17:31:45 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /historias/admin
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 17:31:55 Error: [MissingControllerException] Controller class PacienteController could not be found.
+Exception Attributes: array (
+  'class' => 'PacienteController',
+  'plugin' => NULL,
+)
+Request URL: /historias/paciente
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 17:32:22 Error: [MissingViewException] View file "/var/www/html/historias/app/View/DepartamentoPacientes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/DepartamentoPacientes/index.ctp',
+)
+Request URL: /historias/departamento_pacientes
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(DepartamentoPacientesController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-17 17:32:29 Error: [MissingViewException] View file "/var/www/html/historias/app/View/DepartamentoPacientes/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/DepartamentoPacientes/add.ctp',
+)
+Request URL: /historias/departamento_pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(DepartamentoPacientesController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-17 17:32:45 Error: [MissingControllerException] Controller class PacientesController could not be found.
+Exception Attributes: array (
+  'class' => 'PacientesController',
+  'plugin' => NULL,
+)
+Request URL: /historias/pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 17:32:51 Error: [MissingControllerException] Controller class PacientesController could not be found.
+Exception Attributes: array (
+  'class' => 'PacientesController',
+  'plugin' => NULL,
+)
+Request URL: /historias/pacientes
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 17:32:59 Error: [MissingControllerException] Controller class PacientesController could not be found.
+Exception Attributes: array (
+  'class' => 'PacientesController',
+  'plugin' => NULL,
+)
+Request URL: /historias/pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-17 17:34:42 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Pacientes/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Pacientes/add.ctp',
+)
+Request URL: /historias/pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PacientesController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
