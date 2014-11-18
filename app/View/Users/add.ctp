@@ -1,19 +1,21 @@
 <div class="users form">
 <?php echo $this->Form->create('User'); ?>
 	<fieldset>
-		<legend><?php echo __('Add User'); ?></legend>
+		<legend><?php echo __('Registrar Usuarios'); ?></legend>
+		<br>
 	<?php
-		echo $this->Form->input('grupo_id');
-		echo $this->Form->input('departamento_id');
-		echo $this->Form->input('username');
-		echo $this->Form->input('password');
-		echo $this->Form->input('nombre');
-		echo $this->Form->input('apellido');
-		echo $this->Form->input('dni');
-		echo $this->Form->input('email');
+		echo $this->Form->input('grupo_id', array('class'=>'form-control'));
+
+		echo $this->Form->input('departamento_id', array('class'=>'form-control'));
+		echo $this->Form->input('username',array('class'=>'form-control'));
+		echo $this->Form->input('password',array('class'=>'form-control'));
+		echo $this->Form->input('nombre',array('class'=>'form-control'));
+		echo $this->Form->input('apellido',array('class'=>'form-control'));
+		echo $this->Form->input('dni',array('class'=>'form-control'));
+		echo $this->Form->input('email',array('class'=>'form-control'));
 	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+	</fieldset><br>
+	<input type="submit" value"Submit" class="btn btn-primary">
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

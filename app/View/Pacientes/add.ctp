@@ -1,21 +1,32 @@
 <div class="pacientes form">
-<?php echo $this->Form->create('Paciente'); ?>
-	<fieldset>
-		<legend><?php echo __('Add Paciente'); ?></legend>
-	<?php
-		echo $this->Form->input('nombre');
-		echo $this->Form->input('apellido');
-		echo $this->Form->input('dni');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->create('Paciente',array('class'=>'form-horizontal', 'role'=>'form')); ?>
+	<div class="form-group">
+		<fieldset>
+			<legend><?php echo __('Registrar Paciente'); ?></legend>
+				<?php
+					echo $this->Form->input('nombre', 
+						array('class'=>'form-control'));
+					echo $this->Form->input('apellido', 
+						array('class'=>'form-control'));
+					echo $this->Form->input('dni',
+					    array('label'=>'Cedula','class'=>'form-control'));
+				?>
+		</fieldset>
+	</div>
+	<input type="submit" value"Submit" class="btn btn-primary">
+	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
 
-		<li><?php echo $this->Html->link(__('List Pacientes'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Historia'), array('controller' => 'historia', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Historium'), array('controller' => 'historia', 'action' => 'add')); ?> </li>
-	</ul>
+<div class="row">
+
+    <div class="list-group col-md-2 small">
+		<a href="#" class="list-group-item active"><?php echo __('Acciones'); ?></a>
+		<?php echo $this->Html->link(__('Lista Pacientes'), array('action' => 'index'),array('class' => 'list-group-item')); 
+		?>
+		<?php echo $this->Html->link(__('Lista Historias'), array('controller' => 'historia', 'action' => 'index'), array('class' => 'list-group-item'), array('class' => 'list-group-item')); 
+		?> 
+		<?php echo $this->Html->link(__('Nueva Historia'), array('controller' => 'historia', 'action' => 'add'), array('class' => 'list-group-item')); 
+		?> 
+		
+    </div>
 </div>

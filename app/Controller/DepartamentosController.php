@@ -34,7 +34,7 @@ class DepartamentosController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Departamento->exists($id)) {
-			throw new NotFoundException(__('Invalid departamento'));
+			throw new NotFoundException(__('Departamento Invalido'));
 		}
 		$options = array('conditions' => array('Departamento.' . $this->Departamento->primaryKey => $id));
 		$this->set('departamento', $this->Departamento->find('first', $options));
@@ -49,10 +49,10 @@ class DepartamentosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Departamento->create();
 			if ($this->Departamento->save($this->request->data)) {
-				$this->Session->setFlash(__('The departamento has been saved.'));
+				$this->Session->setFlash(__('Departamento Guardado'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The departamento could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Departamento no guardado, Por favor intente de nuevo'));
 			}
 		}
 	}
@@ -66,14 +66,14 @@ class DepartamentosController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Departamento->exists($id)) {
-			throw new NotFoundException(__('Invalid departamento'));
+			throw new NotFoundException(__('Departamento Invalido'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Departamento->save($this->request->data)) {
-				$this->Session->setFlash(__('The departamento has been saved.'));
+				$this->Session->setFlash(__('Departamento Actualizado'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The departamento could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Departamento no actualizado, Por favor intente de nuevo.'));
 			}
 		} else {
 			$options = array('conditions' => array('Departamento.' . $this->Departamento->primaryKey => $id));
@@ -91,13 +91,13 @@ class DepartamentosController extends AppController {
 	public function delete($id = null) {
 		$this->Departamento->id = $id;
 		if (!$this->Departamento->exists()) {
-			throw new NotFoundException(__('Invalid departamento'));
+			throw new NotFoundException(__('Departamento Invalido'));
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Departamento->delete()) {
-			$this->Session->setFlash(__('The departamento has been deleted.'));
+			$this->Session->setFlash(__('Departamento Eliminado'));
 		} else {
-			$this->Session->setFlash(__('The departamento could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('El departamento no a sido Eliminado. Intente de Nuevo'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
@@ -121,7 +121,7 @@ class DepartamentosController extends AppController {
  */
 	public function admin_view($id = null) {
 		if (!$this->Departamento->exists($id)) {
-			throw new NotFoundException(__('Invalid departamento'));
+			throw new NotFoundException(__('Departamento Invalido'));
 		}
 		$options = array('conditions' => array('Departamento.' . $this->Departamento->primaryKey => $id));
 		$this->set('departamento', $this->Departamento->find('first', $options));
@@ -136,10 +136,10 @@ class DepartamentosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Departamento->create();
 			if ($this->Departamento->save($this->request->data)) {
-				$this->Session->setFlash(__('The departamento has been saved.'));
+				$this->Session->setFlash(__('Departamento Guardado'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The departamento could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Departamento no guardado, Intento de nuevo.'));
 			}
 		}
 	}
@@ -153,14 +153,14 @@ class DepartamentosController extends AppController {
  */
 	public function admin_edit($id = null) {
 		if (!$this->Departamento->exists($id)) {
-			throw new NotFoundException(__('Invalid departamento'));
+			throw new NotFoundException(__('Departamento Invalido'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Departamento->save($this->request->data)) {
-				$this->Session->setFlash(__('The departamento has been saved.'));
+				$this->Session->setFlash(__('Departamento Actualizado'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The departamento could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Departamento no actualizado, Intente de nuevo.'));
 			}
 		} else {
 			$options = array('conditions' => array('Departamento.' . $this->Departamento->primaryKey => $id));
@@ -178,13 +178,13 @@ class DepartamentosController extends AppController {
 	public function admin_delete($id = null) {
 		$this->Departamento->id = $id;
 		if (!$this->Departamento->exists()) {
-			throw new NotFoundException(__('Invalid departamento'));
+			throw new NotFoundException(__('Departamento Invalido'));
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Departamento->delete()) {
-			$this->Session->setFlash(__('The departamento has been deleted.'));
+			$this->Session->setFlash(__('Departamento Eliminado'));
 		} else {
-			$this->Session->setFlash(__('The departamento could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('Departamento no eliminado, Intente de nuevo.'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
