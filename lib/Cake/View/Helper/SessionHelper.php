@@ -133,7 +133,7 @@ class SessionHelper extends AppHelper {
 				if (!empty($flash['params']['class'])) {
 					$class = $flash['params']['class'];
 				}
-				$out = '<div id="' . $key . 'Message" class="' . $class . '">' . $message . '</div>';
+				$out = '<p id="' . $key . 'Message" class=" bg-info ' . $class . '" style="padding: 15px">' . $message . '</p>';
 			} elseif (!$flash['element']) {
 				$out = $message;
 			} else {
