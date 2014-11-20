@@ -10,6 +10,7 @@
 /dist
 /tags
 *.mo
+*.log
 
 # IDE and editor specific files #
 #################################
