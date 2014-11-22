@@ -5,6 +5,10 @@
 		<br>
 	<?php
 		echo $this->Form->input('grupo_id', array('class'=>'form-control'));
+		
+		echo $this->Form->input('role', array(
+            'options' => array('admin' => 'Admin', 'doctor' => 'Doctor')
+        ));
 
 		echo $this->Form->input('departamento_id', array('class'=>'form-control'));
 		echo $this->Form->input('username',array('class'=>'form-control'));

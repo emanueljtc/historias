@@ -2981,3 +2981,12 @@ Request URL: /historias/Acceso
 Stack Trace:
 #0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-11-22 00:45:53 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /historias/users//add
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
