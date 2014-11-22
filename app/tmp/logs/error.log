@@ -1,0 +1,2983 @@
+2014-11-18 00:28:02 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /historias/pacientes
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 /var/www/html/historias/lib/Cake/Model/Model.php(3539): ConnectionManager::getDataSource('default')
+#2 /var/www/html/historias/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#3 /var/www/html/historias/lib/Cake/Model/Model.php(3566): Model->setSource('paciente')
+#4 /var/www/html/historias/lib/Cake/Model/Model.php(2947): Model->getDataSource()
+#5 /var/www/html/historias/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/html/historias/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/historias/app/Controller/PacientesController.php(25): PaginatorComponent->paginate()
+#8 [internal function]: PacientesController->index()
+#9 /var/www/html/historias/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PacientesController), Array)
+#10 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PacientesController), Object(CakeRequest))
+#12 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-18 00:28:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:37:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:37:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:38:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:38:11 Error: [MissingViewException] View file "/var/www/html/historias/app/View/DepartamentoPacientes/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/DepartamentoPacientes/add.ctp',
+)
+Request URL: /historias/departamento_pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(DepartamentoPacientesController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 00:38:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:38:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:38:30 Error: [MissingViewException] View file "/var/www/html/historias/app/View/DepartamentoPacientes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/DepartamentoPacientes/index.ctp',
+)
+Request URL: /historias/departamento_pacientes
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(DepartamentoPacientesController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 00:38:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:38:34 Error: [MissingViewException] View file "/var/www/html/historias/app/View/DepartamentoPacientes/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/DepartamentoPacientes/add.ctp',
+)
+Request URL: /historias/departamento_pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(DepartamentoPacientesController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 00:38:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:38:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:38:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:39:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:39:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:39:35 Error: [MissingViewException] View file "/var/www/html/historias/app/View/DepartamentoPacientes/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/DepartamentoPacientes/add.ctp',
+)
+Request URL: /historias/departamento_pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(DepartamentoPacientesController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 00:39:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:39:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:40:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:50:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:52:20 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/html/historias/app/View/Pacientes/add.ctp, line 7]
+2014-11-18 00:52:20 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /historias/pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 7, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 7, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 00:52:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:52:30 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/html/historias/app/View/Pacientes/add.ctp, line 7]
+2014-11-18 00:52:30 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /historias/pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 7, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 7, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 00:52:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:52:32 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/html/historias/app/View/Pacientes/add.ctp, line 7]
+2014-11-18 00:52:32 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /historias/pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 7, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 7, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 00:52:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:53:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:54:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:55:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:56:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:57:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:57:13 Error: [MissingViewException] View file "/var/www/html/historias/app/View/DepartamentoPacientes/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/DepartamentoPacientes/add.ctp',
+)
+Request URL: /historias/departamento_pacientes/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(DepartamentoPacientesController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 00:57:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:57:30 Error: [MissingViewException] View file "/var/www/html/historias/app/View/DepartamentoPacientes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/DepartamentoPacientes/index.ctp',
+)
+Request URL: /historias/departamento_pacientes
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(DepartamentoPacientesController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 00:57:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:57:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:59:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 00:59:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:01:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:01:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:02:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:02:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:02:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:02:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:03:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:03:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:04:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:08:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:09:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:09:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:09:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:09:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:11:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:12:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:15:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:15:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:15:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:15:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:15:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:15:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:15:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:15:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:15:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:15:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:16:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:17:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:17:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:17:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:17:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:17:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:17:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:18:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:18:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:19:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:19:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:26:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:26:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:26:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:26:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:31:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:32:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:32:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:32:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:32:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:32:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:34:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:35:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:36:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:36:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:36:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:39:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:39:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:40:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:43:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:45:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:46:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:47:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:47:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:47:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:48:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:48:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:50:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:50:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:50:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:50:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:50:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:50:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:51:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:52:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:52:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:52:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:52:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:52:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:53:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:53:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 01:54:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:04:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:05:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:05:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:05:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:05:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:07:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:07:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:07:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:08:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:08:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:08:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:08:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:08:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:09:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:09:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:09:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:09:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:10:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:12:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:13:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:13:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:13:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:14:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:18:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:20:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:21:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:21:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:23:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:23:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:24:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:24:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:24:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:24:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:24:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:24:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:25:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:25:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:26:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:26:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:26:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:26:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:26:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:26:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:28:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:29:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:29:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:30:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:31:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:31:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:32:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:34:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:35:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:35:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:35:26 Error: [PrivateActionException] Private Action HistoriaController::admin_index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'HistoriaController',
+  'action' => 'admin_index',
+)
+Request URL: /historias/historia/admin_index
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HistoriaController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-18 02:35:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:35:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:36:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:37:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:38:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:38:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:49:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 02:49:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /historias/css/starter-template.css
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-18 03:43:26 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/html/historias/app/View/Pacientes/index.ctp, line 31]
+2014-11-18 03:43:26 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /historias/pacientes
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 31, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 31, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 03:44:10 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/html/historias/app/View/Pacientes/index.ctp, line 31]
+2014-11-18 03:44:10 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /historias/pacientes
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 31, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 31, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 03:44:29 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/html/historias/app/View/Historia/index.ctp, line 34]
+2014-11-18 03:44:29 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /historias/historia
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 34, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 34, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 03:44:47 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/html/historias/app/View/Historia/index.ctp, line 34]
+2014-11-18 03:44:47 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /historias/historia
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 34, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 34, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:04:18 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:04:18 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:14:33 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:14:33 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:16:37 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:16:37 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:21 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:21 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:23 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:23 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:24 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:24 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:25 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:25 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:25 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:25 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:39 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:39 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:17:39 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/historias/app/Controller/HistoriaController.php, line 58]
+2014-11-18 04:17:39 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /historias/historia/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 58, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 04:31:18 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Grupos/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Grupos/index.ctp',
+)
+Request URL: /historias/grupos
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 04:31:26 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Grupos/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Grupos/index.ctp',
+)
+Request URL: /historias/grupos
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 04:31:47 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Grupos/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Grupos/index.ctp',
+)
+Request URL: /historias/grupos
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 04:32:08 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Grupos/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Grupos/index.ctp',
+)
+Request URL: /historias/grupos
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 04:32:27 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Grupos/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Grupos/add.ctp',
+)
+Request URL: /historias/grupos/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 04:32:39 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Grupos/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Grupos/add.ctp',
+)
+Request URL: /historias/grupos/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 04:32:45 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Grupos/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Grupos/add.ctp',
+)
+Request URL: /historias/grupos/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 04:33:23 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Grupos/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Grupos/index.ctp',
+)
+Request URL: /historias/grupos
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 04:39:47 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Grupos/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Grupos/index.ctp',
+)
+Request URL: /historias/grupos
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-18 05:16:17 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/historias/app/View/Users/add.ctp, line 7]
+2014-11-18 05:16:17 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /historias/users/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 7, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 7, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 17:12:08 Error: Fatal Error (4): syntax error, unexpected 'prefix' (T_STRING), expecting ')' in [/var/www/html/historias/app/Config/database.php, line 12]
+2014-11-18 17:12:08 Error: [FatalErrorException] syntax error, unexpected 'prefix' (T_STRING), expecting ')'
+Request URL: /historias/departamentos
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 12, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 12, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 03:30:58 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/historias/app/Controller/UsersController.php, line 25]
+2014-11-20 03:30:58 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/historias/app/Controller/UsersController.php, line 25]
+2014-11-20 03:30:58 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /historias/users
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 25, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 25, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 03:30:58 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /historias/users
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 25, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 25, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 03:31:02 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/historias/app/Controller/UsersController.php, line 25]
+2014-11-20 03:31:02 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /historias/users
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 25, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 25, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 03:31:23 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/historias/app/Controller/UsersController.php, line 25]
+2014-11-20 03:31:23 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /historias/users
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 25, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 25, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 03:35:44 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/historias/app/Model/User.php, line 145]
+2014-11-20 03:35:44 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /historias/users
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 145)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 145, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 145, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 03:38:04 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/historias/app/Model/User.php, line 137]
+2014-11-20 03:38:04 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /historias/users
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 137)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 137, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 137, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:31:31 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Core/App.php(227): CakePlugin::path('DebugKit')
+#1 /var/www/html/historias/lib/Cake/Core/App.php(549): App::path('Controller/Comp...', 'DebugKit')
+#2 [internal function]: App::load('ToolbarComponen...')
+#3 [internal function]: spl_autoload_call('ToolbarComponen...')
+#4 /var/www/html/historias/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#5 /var/www/html/historias/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#6 /var/www/html/historias/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#7 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#8 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-20 04:34:41 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Core/App.php(227): CakePlugin::path('DebugKit')
+#1 /var/www/html/historias/lib/Cake/Core/App.php(549): App::path('Controller/Comp...', 'DebugKit')
+#2 [internal function]: App::load('ToolbarComponen...')
+#3 [internal function]: spl_autoload_call('ToolbarComponen...')
+#4 /var/www/html/historias/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#5 /var/www/html/historias/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#6 /var/www/html/historias/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#7 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#8 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-20 04:36:37 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /historias/add
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 04:41:51 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /historias/add
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 04:54:26 Error: Fatal Error (4): syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 119]
+2014-11-20 04:54:26 Error: [FatalErrorException] syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:31 Error: Fatal Error (4): syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 119]
+2014-11-20 04:54:31 Error: [FatalErrorException] syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:32 Error: Fatal Error (4): syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 119]
+2014-11-20 04:54:32 Error: [FatalErrorException] syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:33 Error: Fatal Error (4): syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 119]
+2014-11-20 04:54:33 Error: [FatalErrorException] syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:33 Error: Fatal Error (4): syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 119]
+2014-11-20 04:54:33 Error: [FatalErrorException] syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:34 Error: Fatal Error (4): syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 119]
+2014-11-20 04:54:34 Error: [FatalErrorException] syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:35 Error: Fatal Error (4): syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 119]
+2014-11-20 04:54:35 Error: [FatalErrorException] syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:35 Error: Fatal Error (4): syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 119]
+2014-11-20 04:54:35 Error: [FatalErrorException] syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:36 Error: Fatal Error (4): syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 119]
+2014-11-20 04:54:36 Error: [FatalErrorException] syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:36 Error: Fatal Error (4): syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 119]
+2014-11-20 04:54:36 Error: [FatalErrorException] syntax error, unexpected ''password_update'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 119, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:57 Error: Fatal Error (4): syntax error, unexpected ''nombre'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 134]
+2014-11-20 04:54:57 Error: [FatalErrorException] syntax error, unexpected ''nombre'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 134)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 134, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 134, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 04:54:59 Error: Fatal Error (4): syntax error, unexpected ''nombre'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in [/var/www/html/historias/app/Model/User.php, line 134]
+2014-11-20 04:54:59 Error: [FatalErrorException] syntax error, unexpected ''nombre'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 134)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 134, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 134, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 05:14:50 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/var/www/html/historias/app/Controller/UsersController.php, line 73]
+2014-11-20 05:14:50 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 73, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 73, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 05:15:18 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/var/www/html/historias/app/Controller/UsersController.php, line 73]
+2014-11-20 05:15:18 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 73, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 73, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 05:27:01 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/historias/app/Model/User.php, line 145]
+2014-11-20 05:27:01 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /historias/users/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 145)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 145, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 145, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 05:49:22 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 05:50:20 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/historias/app/Controller/UsersController.php, line 30]
+2014-11-20 05:50:20 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 30, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 30, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 05:56:42 Error: [MissingControllerException] Controller class AccessController could not be found.
+Exception Attributes: array (
+  'class' => 'AccessController',
+  'plugin' => NULL,
+)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 05:59:35 Error: [MissingActionException] Action AccessController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccessController',
+  'action' => 'login',
+)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AccessController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 05:59:58 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 06:00:18 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 06:00:37 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 06:03:34 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Access/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Access/login.ctp',
+)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AccessController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-20 06:12:25 Error: [MissingActionException] Action AccessController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccessController',
+  'action' => 'add',
+)
+Request URL: /historias/access/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AccessController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 06:14:13 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in [/var/www/html/historias/app/View/Access/login.ctp, line 14]
+2014-11-20 06:14:13 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 14, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 14, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 06:14:25 Error: [MissingActionException] Action AccessController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccessController',
+  'action' => 'add',
+)
+Request URL: /historias/access/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AccessController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 06:14:29 Error: [MissingActionException] Action AccessController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccessController',
+  'action' => 'add',
+)
+Request URL: /historias/access/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AccessController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 06:14:30 Error: [MissingActionException] Action AccessController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccessController',
+  'action' => 'add',
+)
+Request URL: /historias/access/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AccessController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 06:14:47 Error: [MissingActionException] Action AccessController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccessController',
+  'action' => 'add',
+)
+Request URL: /historias/access/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AccessController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 06:14:52 Error: [MissingActionException] Action AccessController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccessController',
+  'action' => 'index',
+)
+Request URL: /historias/access/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AccessController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 06:48:47 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /historias/home
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 06:52:04 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /historias/
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 06:54:19 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/historias/app/View/Users/login.ctp, line 13]
+2014-11-20 06:54:19 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /historias/?_method=POST&data%5BUser%5D%5BUsername%3A+%5D=emanuel&data%5BUser%5D%5BPassword+%3A%5D=ema18787&go=Ingresar
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 13, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 13, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 06:59:29 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /historias/login
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 06:59:46 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /historias/login
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 06:59:50 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /historias/login
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 07:01:24 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /historias/login
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 07:01:33 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /historias/user/login
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 07:01:54 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /historias/user/login
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-20 07:48:29 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/historias/app/Model/User.php, line 30]
+2014-11-20 07:48:29 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /historias/users/
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 30, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 30, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 08:13:18 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/historias/app/Controller/UsersController.php, line 34]
+2014-11-20 08:13:18 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 34, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 34, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 08:21:00 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/historias/app/Controller/UsersController.php, line 34]
+2014-11-20 08:21:00 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 34, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 34, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 08:21:45 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/historias/app/Controller/UsersController.php, line 34]
+2014-11-20 08:21:45 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 34, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 34, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 08:22:23 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/historias/app/Controller/UsersController.php, line 34]
+2014-11-20 08:22:23 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 34, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 34, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 08:23:39 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/historias/app/Controller/UsersController.php, line 38]
+2014-11-20 08:23:39 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/h...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/h...', 38, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/h...', 38, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 20:31:41 Error: [MissingActionException] Action UsersController::login_maquetado() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login_maquetado',
+)
+Request URL: /historias/users/login_maquetado
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-20 20:32:01 Error: [MissingActionException] Action UsersController::l() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'l',
+)
+Request URL: /historias/users/l
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:41:47 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:41:47 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:41:58 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:00 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:01 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:03 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:03 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:04 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:05 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:05 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:06 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:06 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:07 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:07 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 19:42:13 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/historias/app/Model/User.php, line 134]
+2014-11-21 19:42:13 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /historias/users/add
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 134)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 134, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 134, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 19:46:09 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-21 20:02:00 Error: Fatal Error (64): Cannot redeclare UsersController::beforeFilter() in [/var/www/html/historias/app/Controller/UsersController.php, line 27]
+2014-11-21 20:02:00 Error: [FatalErrorException] Cannot redeclare UsersController::beforeFilter()
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/h...', 27)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/h...', 27, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/h...', 27, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 20:02:48 Error: [MissingViewException] View file "/var/www/html/historias/app/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/historias/app/View/Users/login.ctp',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/historias/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-21 20:07:47 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/historias/app/Model/User.php, line 134]
+2014-11-21 20:07:47 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/h...', 134)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/h...', 134, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/h...', 134, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 23:50:47 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [/var/www/html/historias/app/Controller/UsersController.php, line 24]
+2014-11-21 23:50:47 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/h...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/h...', 24, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/h...', 24, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 23:50:56 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [/var/www/html/historias/app/Controller/UsersController.php, line 24]
+2014-11-21 23:50:56 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/h...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/h...', 24, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/h...', 24, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 23:58:19 Error: Fatal Error (64): Cannot redeclare AppController::beforeFilter() in [/var/www/html/historias/app/Controller/AppController.php, line 32]
+2014-11-21 23:58:19 Error: [FatalErrorException] Cannot redeclare AppController::beforeFilter()
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/h...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/h...', 32, Array)
+#2 /var/www/html/historias/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/h...', 32, Array)
+#3 /var/www/html/historias/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-22 00:12:10 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-22 00:23:43 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-22 00:24:00 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-22 00:24:12 Error: [MissingControllerException] Controller class AccesóController could not be found.
+Exception Attributes: array (
+  'class' => 'AccesóController',
+  'plugin' => NULL,
+)
+Request URL: /historias/Acces%C3%B3/login
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-22 00:24:20 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-22 00:24:30 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-22 00:24:40 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-22 00:25:10 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /historias/users/login
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-22 00:25:26 Error: [MissingTableException] Table accesos for model Acceso was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'accesos',
+  'class' => 'Acceso',
+  'ds' => 'default',
+)
+Request URL: /historias/Acceso
+Stack Trace:
+#0 /var/www/html/historias/lib/Cake/Model/Model.php(3566): Model->setSource('accesos')
+#1 /var/www/html/historias/lib/Cake/Model/Model.php(2947): Model->getDataSource()
+#2 /var/www/html/historias/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#3 /var/www/html/historias/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /var/www/html/historias/lib/Cake/Controller/Controller.php(1080): PaginatorComponent->paginate(NULL, Array, Array)
+#5 /var/www/html/historias/app/Controller/AccesoController.php(25): Controller->paginate()
+#6 [internal function]: AccesoController->index()
+#7 /var/www/html/historias/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(AccesoController), Array)
+#8 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/historias/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AccesoController), Object(CakeRequest))
+#10 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-11-22 00:28:13 Error: [MissingControllerException] Controller class AccesoController could not be found.
+Exception Attributes: array (
+  'class' => 'AccesoController',
+  'plugin' => NULL,
+)
+Request URL: /historias/Acceso
+Stack Trace:
+#0 /var/www/html/historias/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
