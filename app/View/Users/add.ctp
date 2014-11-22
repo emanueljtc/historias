@@ -9,6 +9,9 @@
 		echo $this->Form->input('departamento_id', array('class'=>'form-control'));
 		echo $this->Form->input('username',array('class'=>'form-control'));
 		echo $this->Form->input('password',array('class'=>'form-control'));
+		echo $this->Form->input('role', array(
+            'options' => array('admin' => 'Admin', 'author' => 'Author')
+        ));
 		echo $this->Form->input('nombre',array('class'=>'form-control'));
 		echo $this->Form->input('apellido',array('class'=>'form-control'));
 		echo $this->Form->input('dni',array('class'=>'form-control'));

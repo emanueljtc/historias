@@ -1,5 +1,6 @@
 <?php
 App::uses('AppModel', 'Model');
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 /**
  * User Model
  *
@@ -20,6 +21,16 @@ class User extends AppModel {
  *
  * @var array
  */
+	public function beforeSave($options = array()) {
+	    if (isset($this->data[$this->alias]['password'])) {
+	        $passwordHasher = new BlowfishPasswordHasher();
+	        $this->data[$this->alias]['password'] = $passwordHasher->hash(
+	            $this->data[$this->alias]['password']
+	        );
+	    }
+	    return true;
+	}
+
 	public $validate = array(
 		'grupo_id' => array(
 			'numeric' => array(
@@ -83,6 +94,7 @@ class User extends AppModel {
                 'message' => 'Please enter a valid role',
                 'allowEmpty' => false 
                 ),
+         ),
 		'nombre' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
