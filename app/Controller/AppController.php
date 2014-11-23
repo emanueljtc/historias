@@ -3,18 +3,19 @@
 App::uses('Controller', 'Controller');
 
 class AppController extends Controller {
+		   public $helpers = array('Html', 'Form', 'Session');
+	 
 
 	  public $components = array(
         'Session',
         'Auth' => array(
             'loginRedirect' => array(
-                'controller' => 'posts',
+                'controller' => 'users',
                 'action' => 'index'
             ),
             'logoutRedirect' => array(
-                'controller' => 'pages',
-                'action' => 'display',
-                'home'
+                'controller' => 'users',
+                'action' => 'login'
             ),
             'authenticate' => array(
                 'Form' => array(
@@ -25,9 +26,9 @@ class AppController extends Controller {
     );
 
     public function beforeFilter() {
-        $this->Auth->allow('login');
+        $this->Auth->allow('index', 'view');
     }
-    public $helpers = array('Html', 'Form', 'Session');
+ 
 
     
 	

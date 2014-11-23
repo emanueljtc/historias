@@ -10,5 +10,6 @@
         echo $this->Form->input('password');
     ?>
     </fieldset>
-<?php echo $this->Form->end(__('Login')); ?>
+<?php echo $this->Form->end(__('Entrar')); ?>
+<?php echo $this->Html->link('Registrar Usuario',array('controller'=>'users','action'=>'add'))?>
 </div>
