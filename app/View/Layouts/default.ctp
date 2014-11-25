@@ -31,36 +31,88 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<?php echo $this->fetch('title'); ?>
 		</title>
 		<?php
-     //LLAMANDO LOS CSS
-			//echo $this->Html->meta('icon');
-      //echo $this->Html->css(array('cake.generic.css'));
-			//echo $this->Html->css(array('bootstrap.css'));
-			//echo $this->Html->css(array('starter-template.css'));
-			echo $this->Html->css(array('lavish-bootstrap.css'));
-      //LAMANDO LOS JS
-      //echo $this->Html->script(array('jquery-1.11.1.min.js')); 
-      //echo $this->Html->script(array('bootstrap.js')); 
-        echo $this->Html->css(array('bootstrap.min','bootstrap-theme.min'));
-        echo $this->Html->script(array('jquery.min','docs.min','bootstrap.min'));
+	   /* Llamado de los CSS */
+     	 echo $this->Html->css(array('bootstrap'));
+       	echo $this->Html->css(array('bootstrap.min'));
+       	//echo $this->Html->css(array('bootswatch.min'));
+       echo $this->Html->css(array('skel.css'));
+        echo $this->Html->css(array('style.css'));
+       echo $this->Html->css(array('style-desktop.css'));
+       echo $this->Html->css(array('style-wide.css'));
+       /* -------------------------------------------*/
+       echo $this->Html->script(array('bootstrap.min'));
+       echo $this->Html->script(array('jquery.min'));
+       echo $this->Html->script(array('skel.min'));
+       echo $this->Html->script(array('skel-layers.min'));
+       echo $this->Html->script(array('init.js'));
+       echo $this->Html->script(array('docs.min.js'));
+       // echo $this->Html->script(array('',''));
+       // echo $this->Html->script(array('modernizr.foundation.js'));
+       
 		?>
   </head>
+<body class="left-sidebar">
 
-  <body>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    <?php echo $this->element('menu');?>
-    <div class="container">
-    	<div class="starter-template">
-				<?php echo $this->Session->flash(); ?>
-				<?php echo $this->fetch('content'); ?>
+				<!-- Content -->
+					<div id="content">
+						<div class="inner">
+					
+							<!-- Post -->
+								<article class="box post post-excerpt">
+									
+									
+									<?php echo $this->Session->flash(); ?>
+									<?php echo $this->fetch('content'); ?>
+								</article>
+						
+							<!-- Post -->
+								
+							
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+					
+						<!-- Logo -->
+							<h1 id="logo"><a href="#">Historias Medicas</a></h1>
+					
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li ><?php echo $this->Html->link(__(' Departamentos'), array('controller' => 'departamentos', 'action' => 'index')); ?> </li>
+									<li><a href="#"><?php echo $this->Html->link(__('Usuarios'), array('controller' => 'users', 'action' => 'index')); ?></a></li>
+									<li><a href="#">About Me</a></li>
+									<li><a href="#">Contact Me</a></li>
+								</ul>
+
+							</nav>
+
+						<!-- Search -->
+							<section class="box search">
+								<form method="post" action="#">
+									<input type="text" class="text" name="search" placeholder="Search" />
+								</form>
+							</section>
+					
+						
+					
+					
+						
+						<!-- Copyright -->
+							<ul id="copyright">
+								<li>&copy; Creado por :</li><li><a href="https://www.facebook.com/emanuel.torresclemente">Emanuel Torres Clemente</a></li>
+							</ul>
+
+					</div>
+
 			</div>
 
-    </div><!-- /.container -->
+	</body>
 
-		<div id="footer">
-			
-		</div>
-
-
-		<?php echo $this->element('sql_dump'); ?>
-  </body>
+  
 </html>
