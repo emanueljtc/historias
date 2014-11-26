@@ -14,8 +14,9 @@
 
 	body
 	{
-		background-color: #e8e8e8;
-		background-image: url('images/bg02.png');
+		/*background-color: #e8e8e8;
+		background-image: url('images/bg02.png');*/
+    background-image: linear-gradient(rgba(0, 0, 0, 1), #C7C7C7 6%, rgba(0, 0, 0, 1));
 	}
 
 		body.is-loading * {
@@ -40,7 +41,7 @@
 
 	a
 	{
-		color: #c94663;
+		color: #000;
 	}
 
 	strong, b
@@ -159,7 +160,7 @@
 			{
 				font-family: 'Open Sans Condensed', sans-serif;
 				font-weight: 700;
-				color: #232323;
+				color: #FFFFFF;
 				margin: 0 0 0.75em 0;
 			}
 		
@@ -299,9 +300,10 @@
 		.button
 		{
 			cursor: pointer;
-			background-color: #c94663;
-			background-image: url('images/bg01.png');
-			border-radius: 0.4em;
+      background-image: linear-gradient(#000000, #8B0909 6%, #000000);
+			/*background-color: #c94663;*/
+			/*background-image: url('images/bg01.png');*/
+			border-radius: 2.4em;
 			text-align: center;
 			box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.15);
 			color: #fff;

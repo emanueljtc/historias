@@ -84,10 +84,18 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
-									<li ><?php echo $this->Html->link(__(' Departamentos'), array('controller' => 'departamentos', 'action' => 'index')); ?> </li>
-									<li><a href="#"><?php echo $this->Html->link(__('Usuarios'), array('controller' => 'users', 'action' => 'index')); ?></a></li>
-									<li><a href="#">About Me</a></li>
-									<li><a href="#">Contact Me</a></li>
+									<li >
+									<?php echo $this->Html->link(__(' Departamentos'), array('controller' => 'departamentos', 'action' => 'index')); ?> 
+									</li>
+									<li>
+									<?php echo $this->Html->link(__('Usuarios'), array('controller' => 'users', 'action' => 'index')); ?>
+									</li>
+									<li>
+									<?php echo $this->Html->link(__('Pacientes'), array('controller' => 'pacientes', 'action' => 'index')); ?>
+									</li>
+									<li>
+									<?php echo $this->Html->link(__('Historias'), array('controller' => 'historia', 'action' => 'index')); ?>
+									</li>
 								</ul>
 
 							</nav>

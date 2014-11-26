@@ -1,10 +1,11 @@
 
 <div class="departamentos"
 	<div class="page_header">
-		<h2><?php echo __('Lista Departamentos'); ?></h2>
+		<center><h2><?php echo __('Lista Departamentos'); ?></h2></center>
 		<br>
 	</div>
-	<div class="col-lg-6">
+	
+	<div class="col-lg-12">
 		    <table class="table table-striped table-hover">
 				
 				
@@ -36,8 +37,7 @@
 	<paginador><!-- etiqueta personalidad-->
 		<?php echo $this->element('paginador');?>
 	</paginador>
-
-
+	
 	<div class="btn-group btn-group-justified">
 	  
 		<?php echo $this->Html->link(__('Nuevo Departamento'), array('action' => 'add'), array('class' => 'btn btn-default'), array('class' => 'btn btn-default')); ?></li>

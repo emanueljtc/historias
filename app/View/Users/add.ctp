@@ -1,34 +1,35 @@
-<div class="users form">
-<?php echo $this->Form->create('User'); ?>
-	<fieldset>
-		<legend><?php echo __('Registrar Usuarios'); ?></legend>
-		<br>
-	<?php
-		echo $this->Form->input('grupo_id', array('class'=>'form-control'));
+<h2>Registro Usuarios</h2>
+<br><br>
+<center>
+<div class="col-lg-6">
+	<div class="well bs-component">
+	<?php echo $this->Form->create('User'); ?>
+		<fieldset>
+			<legend><?php echo __('Registrar el nuevo Usuario'); ?></legend>
+			<br>
+		<?php
+			echo $this->Form->input('grupo_id', array('class'=>'form-control'));
+
+			echo $this->Form->input('departamento_id', array('class'=>'form-control'));
+			echo $this->Form->input('username',array('class'=>'form-control'));
+			echo $this->Form->input('password',array('class'=>'form-control'));
+			echo $this->Form->input('nombre',array('class'=>'form-control'));
+			echo $this->Form->input('apellido',array('class'=>'form-control'));
+			echo $this->Form->input('Cedula',array('class'=>'form-control'));
+			echo $this->Form->input('email',array('class'=>'form-control'));
+
+		?>
+		</fieldset><br>
 		
-		echo $this->Form->input('role', array(
-            'options' => array('admin' => 'Admin', 'doctor' => 'Doctor')
-        ));
+		<center><?php echo $this->Form->end("Guardar",array('class'=>'form-control')); ?><center>
 
-		echo $this->Form->input('departamento_id', array('class'=>'form-control'));
-		echo $this->Form->input('username',array('class'=>'form-control'));
-		echo $this->Form->input('password',array('class'=>'form-control'));
-		echo $this->Form->input('nombre',array('class'=>'form-control'));
-		echo $this->Form->input('apellido',array('class'=>'form-control'));
-		echo $this->Form->input('dni',array('class'=>'form-control'));
-		echo $this->Form->input('email',array('class'=>'form-control'));
-	?>
-	</fieldset><br>
-	<input type="submit" value"Submit" class="btn btn-primary">
+	</div>
+	
+
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Html->link(__('List Users'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Grupos'), array('controller' => 'grupos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Grupo'), array('controller' => 'grupos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Departamentos'), array('controller' => 'departamentos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Departamento'), array('controller' => 'departamentos', 'action' => 'add')); ?> </li>
-	</ul>
+<div class="btn-group btn-group-justified">
+	  
+		<?php echo $this->Html->link(__('Nuevo Usuario'), array('action' => 'add'), array('class' => 'btn btn-default'), array('class' => 'btn btn-default')); ?></li>
+		<?php echo $this->Html->link(__('Lista Departamentos'), array('controller' => 'departamentos', 'action' => 'index'), array('class' => 'btn btn-default')); ?>
+		<?php echo $this->Html->link(__('Nuevo Departamento'), array('controller' => 'departamentos', 'action' => 'add'), array('class' => 'btn btn-default')); ?>
 </div>

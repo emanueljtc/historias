@@ -1,24 +1,23 @@
-<div class="departamentos form">
-<?php echo $this->Form->create('Departamento', array('class'=>'form-horizontal', 'role'=>'form')); ?>
-	<div class="form-group">
-		<fieldset>
-			<legend><?php echo __('Edit Departamento'); ?></legend>
-				<?php echo $this->Form->input('id'); ?>
-				<?php echo $this->Form->input('nombre', array('class'=>'form-control'));?>
-		</fieldset>
-	</div>
-	<input type="submit" value"Submit" class="btn btn-primary">
-</form>
-</div>
+<h2> Edicion Departamento</h2>
+<br>
+<div  class="col-lg-6">
+	<div class="well bs-component">
 
-<div class="row">
-	<div class="list-group col-md-2 small">
-		<a href="#" class="list-group-item active"><?php echo __('Actions'); ?></a>
-		<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Departamento.id')), array('class' => 'list-group-item'), __('Are you sure you want to delete # %s?', $this->Form->value('Departamento.id'))); ?>
-		<?php echo $this->Html->link(__('List Departamentos'), array('action' => 'index'), array('class' => 'list-group-item')); ?>
-		<?php echo $this->Html->link(__('List Departamento Pacientes'), array('controller' => 'departamento_pacientes', 'action' => 'index'), array('class' => 'list-group-item')); ?>
-		<?php echo $this->Html->link(__('New Departamento Paciente'), array('controller' => 'departamento_pacientes', 'action' => 'add'), array('class' => 'list-group-item')); ?>
-		<?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('class' => 'list-group-item')); ?>
-		<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('class' => 'list-group-item')); ?>
+		<?php echo $this->Form->create('Departamento', array('class'=>'form-horizontal', 'role'=>'form')); ?>
+				<div class="form-group">
+					<fieldset>
+						<center><legend><?php echo __('Edite el Departamento'); ?></legend></center>
+							<?php echo $this->Form->input('id'); ?>
+							<?php echo $this->Form->input('nombre', array('class'=>'form-control'));?>
+					</fieldset>
+				</div>
+			<center><?php echo $this->Form->end("Guardar",array('class'=>'form-control')); ?><center>
+		</form>
 	</div>
-</div
+</div>
+<div class="btn-group btn-group-justified">
+	  
+		<?php echo $this->Html->link(__('Nuevo Departamento'), array('action' => 'add'), array('class' => 'btn btn-default'), array('class' => 'btn btn-default')); ?></li>
+		<?php echo $this->Html->link(__('Lista Usuarios'), array('controller' => 'users', 'action' => 'index'), array('class' => 'btn btn-default')); ?>
+		<?php echo $this->Html->link(__('Nuevo Usuario'), array('controller' => 'users', 'action' => 'add'), array('class' => 'btn btn-default')); ?>
+</div>
