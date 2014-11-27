@@ -1,36 +1,28 @@
 <?php
-
 App::uses('Controller', 'Controller');
 
 class AppController extends Controller {
-		   public $helpers = array('Html', 'Form', 'Session');
+	public $helpers = array('Html', 'Form', 'Session');
 
 
-	  public $components = array(
+	public $components = array(
         'Session',
         'Auth' => array(
             'loginRedirect' => array(
-                'controller' => 'users',
-                'action' => 'index'
+                'controller' => 'pacientes',
+                'action' => 'add'
             ),
             'logoutRedirect' => array(
-                'controller' => 'users',
-                'action' => 'login'
+                'controller' => 'pages',
+                'action' => 'display',
+                'home'
             ),
-            'authenticate' => array(
-                'Form' => array(
-                    'passwordHasher' => 'Blowfish'
-                )
-            )
-        )
+            ),
+           
     );
 
     public function beforeFilter() {
-
+        $this->Auth->allow('index', 'view');
     }
 
-
-
-
 }
-

@@ -20,20 +20,16 @@ class UsersController extends AppController {
  *
  * @return void
  */
-
-public function beforeFilter() {
-    parent::beforeFilter();
-    // Allow users to register and logout.
-    $this->Auth->allow('add');
-    $this->Auth->autoRedirect=false;
-}
-
-public function login() {
+	 public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow('add','logout');
+    }
+    public function login() {
     if ($this->request->is('post')) {
         if ($this->Auth->login()) {
             return $this->redirect($this->Auth->redirect());
         }
-        $this->Session->setFlash(__('Usuario o Clave Invalida, Intente de nuevo'));
+        $this->Session->setFlash(__('Usuario o clave Invalida'));
     }
 }
 
