@@ -20,10 +20,10 @@ class UsersController extends AppController {
  *
  * @return void
  */
-	 public function beforeFilter() {
+	 /*public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('add','logout');
-    }
+    }*/
     public function login() {
     if ($this->request->is('post')) {
         if ($this->Auth->login()) {

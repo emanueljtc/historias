@@ -21,6 +21,26 @@
 			<?php echo h($paciente['Paciente']['dni']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Edad'); ?></dt>
+		<dd>
+			<?php echo h($paciente['Paciente']['edad']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Sexo'); ?></dt>
+		<dd>
+			<?php echo h($paciente['Paciente']['sexo']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Direccion'); ?></dt>
+		<dd>
+			<?php echo h($paciente['Paciente']['direccion']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Fecha Nacimiento'); ?></dt>
+		<dd>
+			<?php echo h($paciente['Paciente']['fecha_nacimiento']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Created'); ?></dt>
 		<dd>
 			<?php echo h($paciente['Paciente']['created']); ?>
