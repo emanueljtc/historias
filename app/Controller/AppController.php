@@ -5,7 +5,7 @@ class AppController extends Controller {
 	public $helpers = array('Html', 'Form', 'Session');
 
 
-	public $components = array(
+	/*public $components = array(
         'Session',
         'Auth' => array(
             'loginRedirect' => array(
@@ -23,6 +23,6 @@ class AppController extends Controller {
 
     public function beforeFilter() {
         $this->Auth->allow('index', 'view');
-    }
+    }*/
 
 }
