@@ -55,7 +55,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
+					
 				<!-- Content -->
 					<div id="content">
 						<div class="inner">
@@ -95,6 +95,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 									</li>
 									<li>
 									<?php echo $this->Html->link(__('Historias'), array('controller' => 'historia', 'action' => 'index')); ?>
+									</li>
+									<li>
+									<?php echo $this->Html->link(__('Salir'), array('controller' => 'users', 'action' => 'logout')); ?>
 									</li>
 								</ul>
 

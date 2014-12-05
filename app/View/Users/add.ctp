@@ -8,7 +8,7 @@
 			<legend><?php echo __('Registrar el nuevo Usuario'); ?></legend>
 			<br>
 		<?php
-			echo $this->Form->input('grupo_id', array('class'=>'form-control'));
+			echo $this->Form->input('group_id', array('class'=>'form-control'));
 
 			echo $this->Form->input('departamento_id', array('class'=>'form-control'));
 			echo $this->Form->input('username',array('class'=>'form-control'));

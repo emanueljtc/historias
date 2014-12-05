@@ -5,24 +5,31 @@ class AppController extends Controller {
 	public $helpers = array('Html', 'Form', 'Session');
 
 
-	/*public $components = array(
-        'Session',
+	public $components = array(
+        'Acl',
         'Auth' => array(
-            'loginRedirect' => array(
-                'controller' => 'pacientes',
-                'action' => 'add'
-            ),
-            'logoutRedirect' => array(
-                'controller' => 'pages',
-                'action' => 'display',
-                'home'
-            ),
-            ),
-           
+            'authorize' => array(
+                'Actions' => array('actionPath' => 'controllers')
+            )
+        ),
+        'Session'
     );
-
+    
     public function beforeFilter() {
-        $this->Auth->allow('index', 'view');
-    }*/
+        //Configure AuthComponent
+        $this->Auth->loginAction = array(
+          'controller' => 'users',
+          'action' => 'login'
+        );
+        $this->Auth->logoutRedirect = array(
+          'controller' => 'users',
+          'action' => 'login'
+        );
+        $this->Auth->loginRedirect = array(
+          'controller' => 'pages',
+          'action' => 'home'
+        );
+        $this->Auth->allow('display');
+    }
 
 }

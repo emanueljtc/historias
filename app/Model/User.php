@@ -1,13 +1,15 @@
 <?php
 App::uses('AppModel', 'Model');
+App::uses('AuthComponent', 'Controller/Component');
 /**
  * User Model
  *
- * @property Grupo $Grupo
+ * @property Group $Group
  * @property Departamento $Departamento
  */
 class User extends AppModel {
-
+	
+    public $actsAs = array('Acl' => array('type' => 'requester'));
 /**
  * Display field
  *
@@ -21,7 +23,7 @@ class User extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'grupo_id' => array(
+		'Group_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -127,6 +129,12 @@ class User extends AppModel {
 		),
 	);
 
+	public function beforeSave($options = array()) {
+        $this->data['User']['password'] = AuthComponent::password(
+          $this->data['User']['password']
+        );
+        return true;
+    }
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
@@ -135,9 +143,9 @@ class User extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Grupo' => array(
-			'className' => 'Grupo',
-			'foreignKey' => 'grupo_id',
+		'Group' => array(
+			'className' => 'Group',
+			'foreignKey' => 'group_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -150,4 +158,21 @@ class User extends AppModel {
 			'order' => ''
 		)
 	);
+
+
+    public function parentNode() {
+        if (!$this->id && empty($this->data)) {
+            return null;
+        }
+        if (isset($this->data['User']['group_id'])) {
+            $groupId = $this->data['User']['group_id'];
+        } else {
+            $groupId = $this->field('group_id');
+        }
+        if (!$groupId) {
+            return null;
+        } else {
+            return array('Group' => array('id' => $groupId));
+        }
+    }
 }

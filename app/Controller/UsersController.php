@@ -23,23 +23,29 @@ class UsersController extends AppController {
 	 /*public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('add','logout');
-    }
+    }*/
     public function login() {
-    if ($this->request->is('post')) {
-        if ($this->Auth->login()) {
-            return $this->redirect($this->Auth->redirect());
-        }
-        $this->Session->setFlash(__('Usuario o clave Invalida'));
-    }
-}
 
-public function logout() {
-    return $this->redirect($this->Auth->logout());
-}
+    if ($this->request->is('post')) {
+	    	/*if ($this->Session->read('Auth.User')) {
+	        $this->Session->setFlash('You are logged in!');
+	        return $this->redirect('/');
+	    }*/
+	        if ($this->Auth->login()) {
+	            return $this->redirect($this->Auth->redirectUrl());
+	        }
+	        $this->Session->setFlash(__('Nombre de Usuario o Clave Invalidas'));
+	    }
+	}
+
+	public function logout() {
+	    $this->Session->setFlash('Cerrada la Sesion');
+		$this->redirect($this->Auth->logout());
+	}
 	public function index() {
 		$this->User->recursive = 0;
 		$this->set('users', $this->Paginator->paginate());
-	}*/
+	}
 
 /**
  * view method
@@ -71,9 +77,9 @@ public function logout() {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
 		}
-		$grupos = $this->User->Grupo->find('list');
+		$groups = $this->User->Group->find('list');
 		$departamentos = $this->User->Departamento->find('list');
-		$this->set(compact('grupos', 'departamentos'));
+		$this->set(compact('groups', 'departamentos'));
 	}
 
 /**
@@ -124,6 +130,43 @@ public function logout() {
 		return $this->redirect(array('action' => 'index'));
 	}
 
+	public function beforeFilter() {
+    parent::beforeFilter();
 
+    // For CakePHP 2.0
+    //$this->Auth->allow('*');
+
+    // For CakePHP 2.1 and up
+    $this->Auth->allow('login','logout','initDB');
+}
+	public function initDB() {
+    $group = $this->User->Group;
+
+    // Acceso al grupo de administadores
+    $group->id = 1;
+    $this->Acl->allow($group, 'controllers');
+
+    // Acceso al Grupo de Doctores
+    $group->id = 2;
+    $this->Acl->deny($group, 'controllers');
+    $this->Acl->allow($group, 'controllers/Pacientes');
+    $this->Acl->allow($group, 'controllers/Pages/home');
+    $this->Acl->allow($group, 'controllers/Historia');
+
+    // Acceso a otros grupos
+    /*$group->id = 3;
+    $this->Acl->deny($group, 'controllers');
+    $this->Acl->allow($group, 'controllers/Posts/add');
+    $this->Acl->allow($group, 'controllers/Posts/edit');
+    $this->Acl->allow($group, 'controllers/Widgets/add');
+    $this->Acl->allow($group, 'controllers/Widgets/edit');
+   */
+    // allow basic users to log out
+    $this->Acl->allow($group, 'controllers/users/logout');
+
+    // we add an exit to avoid an ugly "missing views" error message
+    echo "todo listo";
+    exit;
+}
 
 }
