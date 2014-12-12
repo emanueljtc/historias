@@ -1,19 +1,27 @@
-
+<?php echo $this->Html->css(array('login'));?>
 <center>
-<div class="col-lg-6">
-	<div class="well bs-component">
-		<?php echo $this->Session->flash('auth'); ?>
+<h3>Control y Gesti&oacuten de Historias M&eacutedicas</h3>
+<br><br><br><br>
+<div class="login">
+	<div class="login_interno">
+		<?php echo $this->Session->flash('auth',array('class'=>'alert alert-dismissable alert-success')); ?>
+		<div class="avatar">
+			
+		</div>
 		<?php echo $this->Form->create('User'); ?>
 		    <fieldset>
-		        <legend>
-		            <?php echo __('Ingresa tu nombre y clave de usuario'); ?>
-		        </legend>
+		        
 		        <?php echo $this->Form->input('username',array('class'=>'form-control'));
-		        //echo $this->Form->input('email');
+		        
 		        echo $this->Form->input('password',array('class'=>'form-control'));
 		    ?>
 		    </fieldset>
 		    <br>
-		<center><?php echo $this->Form->end("Entrar",array('class'=>'form-control')); ?></center>
-	</div>			
+		<center>
+		<input type="submit" value="Entrar" class="button float-shadow">
+		</center>
+	</div>	
+
 </div>
+
+

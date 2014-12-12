@@ -1,12 +1,26 @@
-<h2>Registro Usuarios</h2>
+<style type="text/css">
+	 .avatar {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto 30px;
+    border-radius: 100%;
+    border: 2px solid #000;
+    background-size: cover;
+    background-image: url('../img/usuario.png');
+   
+  }
+
+</style>
+<center><h2>Registro de Usuarios</h2></center>
 <br><br>
 <center>
 <div class="col-lg-6">
-	<div class="well bs-component">
+	<div class="bloque">
+	<div class="avatar">
+	</div>
 	<?php echo $this->Form->create('User'); ?>
 		<fieldset>
-			<legend><?php echo __('Registrar el nuevo Usuario'); ?></legend>
-			<br>
+			
 		<?php
 			echo $this->Form->input('group_id', array('class'=>'form-control'));
 
@@ -15,13 +29,15 @@
 			echo $this->Form->input('password',array('class'=>'form-control'));
 			echo $this->Form->input('nombre',array('class'=>'form-control'));
 			echo $this->Form->input('apellido',array('class'=>'form-control'));
-			echo $this->Form->input('Cedula',array('class'=>'form-control'));
+			echo $this->Form->input('dni',array('class'=>'form-control','type'=>'integer','label'=>'Cedula'));
 			echo $this->Form->input('email',array('class'=>'form-control'));
 
 		?>
 		</fieldset><br>
 		
-		<center><?php echo $this->Form->end("Guardar",array('class'=>'form-control')); ?><center>
+		<center>
+		<input type="submit" value="Guardar" class="button float-shadow">
+		<center>
 
 	</div>
 	

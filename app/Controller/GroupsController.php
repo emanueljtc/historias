@@ -109,6 +109,6 @@ class GroupsController extends AppController {
     //$this->Auth->allow('*');
 
     // For CakePHP 2.1 and up
-    //$this->Auth->allow();
+    $this->Auth->allow();
 }
 }

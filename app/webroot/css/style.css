@@ -13,10 +13,14 @@
 /*********************************************************************************/
 
 	body
-	{
-		/*background-color: #e8e8e8;
-		background-image: url('images/bg02.png');*/
-    background-image: linear-gradient(rgba(0, 0, 0, 1), #C7C7C7 6%, rgba(0, 0, 0, 1));
+	{	
+		/*RESPONSIVE DEL BACKGROUND*/
+		background-color: #CAAA93;
+		background-image: url('images/bg02.png');
+    	background-repeat: no-repeat;
+    	background-position: center center;
+    	background-size: cover;
+    	background-attachment: fixed;
 	}
 
 		body.is-loading * {
@@ -35,13 +39,14 @@
 	body,input,textarea,select
 	{
 		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 400;
-		color: #565656;
+		font-weight: 700;
+		color: #000000;
+
 	}
 
 	a
 	{
-		color: #000;
+		color: #fff;
 	}
 
 	strong, b
@@ -50,11 +55,11 @@
 		color: #232323;
 	}
 
-	h2,h3,h4,h5,h6
+	h2,h4,h5,h6
 	{
 		font-family: 'Open Sans Condensed', sans-serif;
 		font-weight: 700;
-		color: #232323;
+		color: #fff;
 	}
 
 	h2 a, h4 a, h5 a, h6 a
@@ -171,9 +176,10 @@
 			form textarea
 			{
 				display: block;
-				border-radius: 0.4em;
+				border-radius: 5.4em;
 				-webkit-appearance: none;
-				border: solid 1px #ddd;
+				border: solid 2px #000;
+				background-color: rgba(255, 255, 255, 0.38);
 				padding: 0.5em 0.75em;
 				width: 100%;
 				line-height: 1.25em;
@@ -221,7 +227,7 @@
 				font-weight: 300;
 				display: block;
 				margin-top: 1em;
-				color: #999;
+				color: #fff;
 			}
 
 		section,
@@ -822,8 +828,8 @@
 	#content
 	{
 		position: relative;
-		background-color: #fff;
-		background-image: url('images/bg02.png');
+		background-color: rgba(11, 55, 74, 0.43);
+		/*background-image: url('images/bg02.png');*/
 	}
 	
 		#content > .inner

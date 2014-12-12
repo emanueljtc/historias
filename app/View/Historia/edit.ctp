@@ -1,23 +1,28 @@
-<div class="historia form">
-<?php echo $this->Form->create('Historium'); ?>
-	<fieldset>
-		<legend><?php echo __('Edit Historium'); ?></legend>
-	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('paciente_id');
-		echo $this->Form->input('enfermedad');
-		echo $this->Form->input('observaciones');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Historium.id')), array(), __('Are you sure you want to delete # %s?', $this->Form->value('Historium.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Historia'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Pacientes'), array('controller' => 'pacientes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Paciente'), array('controller' => 'pacientes', 'action' => 'add')); ?> </li>
-	</ul>
+<div id= general>
+	<div class="col-lg-6">
+		<div class="bloque">
+				<center><legend><?php echo __('Editar Historia'); ?></legend></center>
+			<?php echo $this->Form->create('Historium'); ?>
+				<fieldset>
+					
+				<?php
+					echo $this->Form->input('id', array('class'=>'form-control'));
+					echo $this->Form->input('paciente_id', array('class'=>'form-control','label'=>'Paciente Cedula'));
+					echo $this->Form->input('enfermedad', array('class'=>'form-control'));
+					echo $this->Form->input('observaciones', array('class'=>'form-control'));
+				?>
+				</fieldset>
+			<br>
+		<center>
+		<input type="submit" value="Actualizar" class="button float-shadow">
+		</center>
+		</div>
+	</div>
+		
+	<div class="btn-group btn-group-justified">
+	  
+		<?php echo $this->Html->link(__('Nuevo Paciente'), array('controller' => 'pacientes', 'action' => 'add'), array('class' => 'btn btn-default')); ?>
+		<?php echo $this->Html->link(__('Lista Historias'), array('action' => 'index'), array('class' => 'btn btn-default')); ?>
+		<?php echo $this->Html->link(__('Nueva Historia'), array('action' => 'add'), array('class' => 'btn btn-default')); ?>
+	</div>
 </div>

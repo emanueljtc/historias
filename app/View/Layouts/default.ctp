@@ -34,11 +34,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	   /* Llamado de los CSS */
      	 echo $this->Html->css(array('bootstrap'));
        	echo $this->Html->css(array('bootstrap.min'));
-       	//echo $this->Html->css(array('bootswatch.min'));
-       echo $this->Html->css(array('skel.css'));
+        echo $this->Html->css(array('skel.css'));
         echo $this->Html->css(array('style.css'));
-       echo $this->Html->css(array('style-desktop.css'));
-       echo $this->Html->css(array('style-wide.css'));
+        echo $this->Html->css(array('hover.css'));
+      	echo $this->Html->css(array('style-desktop'));
+       	echo $this->Html->css(array('style-wide.css'));
        /* -------------------------------------------*/
        echo $this->Html->script(array('bootstrap.min'));
        echo $this->Html->script(array('jquery.min'));
@@ -61,12 +61,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<div class="inner">
 					
 							<!-- Post -->
+							<center>
 								<article class="box post post-excerpt">
 									
 									
 									<?php echo $this->Session->flash(); ?>
 									<?php echo $this->fetch('content'); ?>
 								</article>
+							</center>
 						
 							<!-- Post -->
 								
@@ -84,6 +86,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
+									<li >
+									<?php echo $this->Html->link(__(' Inicio'), array('controller' => 'pages', 'action' => 'home')); ?> 
+									</li>
 									<li >
 									<?php echo $this->Html->link(__(' Departamentos'), array('controller' => 'departamentos', 'action' => 'index')); ?> 
 									</li>
@@ -109,12 +114,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 									<input type="text" class="text" name="search" placeholder="Search" />
 								</form>
 							</section>
-					
-						
-					
-					
-						
-						<!-- Copyright -->
+					<!-- Creado -->
 							<ul id="copyright">
 								<li>&copy; Creado por :</li><li><a href="https://www.facebook.com/emanuel.torresclemente">Emanuel Torres Clemente</a></li>
 							</ul>

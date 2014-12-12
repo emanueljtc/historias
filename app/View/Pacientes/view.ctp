@@ -1,4 +1,56 @@
-<div class="pacientes view">
+<div id="general">
+<center><br><br><br><br><br><br>
+	<div class="col-lg-12">
+		<div class="bloque"> 
+		<h2><?php echo __('Paciente'); ?></h2>
+		<table class="table table-striped table-hover">
+		
+		
+		<br><br>
+		<tbody>
+			<tr class="success">
+				<td>Nombre</td>
+				<td>Apellido</td>
+				<td>Cedula</td>
+				<td>Edad</td>
+				<td>Sexo</td>
+				<td>Direccion</td>
+				<td>Fecha Nacimiento</td>
+				<td>Telefono</td>
+				<td>G Sanguineo</td>
+			</tr>
+			
+			<tr>
+				
+				
+				
+				<td><?php echo h($paciente['Paciente']['nombre']); ?>&nbsp;</td>
+				<td><?php echo h($paciente['Paciente']['apellido']); ?>&nbsp;</td>
+				<td><?php echo h($paciente['Paciente']['dni']); ?>&nbsp;</td>
+				<td><?php echo h($paciente['Paciente']['edad']); ?>&nbsp;</td>
+				<td><?php echo h($paciente['Paciente']['sexo']); ?>&nbsp;</td>
+				<td><?php echo h($paciente['Paciente']['direccion']); ?>&nbsp;</td>
+				<td><?php echo h($paciente['Paciente']['fecha_nacimiento']);?>&nbsp;</td>
+				<td><?php echo h($paciente['Paciente']['telefono']);?>&nbsp;</td>
+				<td><?php echo h($paciente['Paciente']['g_sanguineo']);?>&nbsp;</td>
+				
+			</tr>
+	    
+		</tbody>
+	</table>
+		</div>
+		</div>
+	</div>
+	<div class="btn-group btn-group-justified">
+	  
+		<?php echo $this->Html->link(__('Nuevo Usuario'), array('action' => 'add'), array('class' => 'btn btn-default'), array('class' => 'btn btn-default')); ?></li>
+		<?php echo $this->Html->link(__('Lista Departamentos'), array('controller' => 'departamentos', 'action' => 'index'), array('class' => 'btn btn-default')); ?>
+		<?php echo $this->Html->link(__('Nuevo Departamento'), array('controller' => 'departamentos', 'action' => 'add'), array('class' => 'btn btn-default')); ?>
+	</div>
+
+</div>
+
+<!-- <div class="pacientes view">
 <h2><?php echo __('Paciente'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
@@ -101,3 +153,4 @@
 		</ul>
 	</div>
 </div>
+ -->

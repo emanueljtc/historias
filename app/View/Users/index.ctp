@@ -7,12 +7,11 @@
 <div class="col-lg-12">
 	<table class="table table-striped table-hover">
 		
-		<tr>
+		<tr class="success">
 				
 				
 				
 				<th><?php echo $this->Paginator->sort('Username'); ?></th>
-				
 				<th><?php echo $this->Paginator->sort('Nombre'); ?></th>
 				<th><?php echo $this->Paginator->sort('Apellido'); ?></th>
 				<th><?php echo $this->Paginator->sort('Cedula'); ?></th>
@@ -29,7 +28,6 @@
 				
 				
 				<td><?php echo h($user['User']['username']); ?>&nbsp;</td>
-				
 				<td><?php echo h($user['User']['nombre']); ?>&nbsp;</td>
 				<td><?php echo h($user['User']['apellido']); ?>&nbsp;</td>
 				<td><?php echo h($user['User']['dni']); ?>&nbsp;</td>

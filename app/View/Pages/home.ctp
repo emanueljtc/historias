@@ -1,1 +1,4 @@
-<h2>HOME</h2>
+<article class="box post post-excerpt">
+	
+		
+</article>

@@ -2,10 +2,10 @@
 App::uses('Controller', 'Controller');
 
 class AppController extends Controller {
-	public $helpers = array('Html', 'Form', 'Session');
+  public $helpers = array('Html', 'Form', 'Session');
 
 
-	public $components = array(
+  public $components = array(
         'Acl',
         'Auth' => array(
             'authorize' => array(

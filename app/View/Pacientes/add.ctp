@@ -1,9 +1,27 @@
+<style type="text/css">
+	 .avatar {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto 30px;
+    border-radius: 100%;
+    border: 2px solid #000;
+    background-size: cover;
+    background-image: url('../img/paciente.png');
+   
+  }
+
+</style>
+<center>
+<h2>Registro de Paciente</h2><br><br>
 <div class="col-lg-6">
-	<div class="well bs-component">
+	<div class="bloque">
+		<div class="avatar">
+				
+		</div>
 	<?php echo $this->Form->create('Paciente',array('class'=>'form-horizontal', 'role'=>'form')); ?>
 		<div class="form-group">
 			<fieldset>
-				<center><legend><?php echo __('Registrar Paciente'); ?></legend></center>
+				
 					<?php
 						echo $this->Form->input('nombre', 
 							array('class'=>'form-control'));
@@ -12,17 +30,20 @@
 						echo $this->Form->input('dni',
 						    array('label'=>'Cedula','class'=>'form-control'));
 						echo $this->Form->input('edad',
-						    array('class'=>'form-control'));
+						    array('class'=>'form-control','type'=>'text'));
 						echo $this->Form->input('sexo',
-						    array('class'=>'form-control'));
+						    array('class'=>'form-control','type'=>'select','options'=>array('F'=>'Femenino','M'=>'Masculino')));
 						echo $this->Form->input('direccion',
 						    array('class'=>'form-control'));
-						echo $this->Form->input('fecha_nacimiento',array('class'=>'form-control'));
+						echo $this->Form->input('fecha_nacimiento',array('class'=>'form-control','type'=>'date'));
+
+						echo $this->Form->input('telefono',array('class'=>'form-control','type'=>'text'));
+						echo $this->Form->input('g_sanguineo',array('class'=>'form-control','type'=>'select','options'=>array('O+'=>'O +','O-'=>'O -','A+'=>'A +','A-'=>'A -','B+'=>'B +','B-'=>'B -','AB+'=>'AB +','AB-'=>'AB -'),'label'=>'Grupo Sanguineo'));
 
 					?>
 			</fieldset>
 		</div>
-		<center><input type="submit" value"Submit" class="btn btn-primary"></center>
+		<center><input type="submit" value="Guardar" class="button float-shadow"></center>
 		
 	</div>
 </div>
@@ -35,29 +56,3 @@
 </div>
 
 
-<!-- <div class="pacientes form">
-<?php echo $this->Form->create('Paciente'); ?>
-	<fieldset>
-		<legend><?php echo __('Add Paciente'); ?></legend>
-	<?php
-		echo $this->Form->input('nombre');
-		echo $this->Form->input('apellido');
-		echo $this->Form->input('dni');
-		echo $this->Form->input('edad');
-		echo $this->Form->input('sexo');
-		echo $this->Form->input('direccion');
-		echo $this->Form->input('fecha_nacimiento');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Html->link(__('List Pacientes'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Historia'), array('controller' => 'historia', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Historium'), array('controller' => 'historia', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
- -->
