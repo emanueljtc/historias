@@ -1,8 +1,11 @@
 <div id="general">
-<center>
-<h2> Edicion de Usuario</h2>
-<br><br>
+	<center>
+		<?php echo $this->element('b3');?>
+	  <center>
 	<div  class="col-lg-6">
+				<br>
+				<h3>Editar Usuario </h3>
+				<br>
 					<div class="bloque">
 					<?php echo $this->Form->create('User'); ?>
 						<fieldset>
@@ -10,7 +13,7 @@
 						<?php
 							echo $this->Form->input('id');
 							echo $this->Form->input('departamento_id',array('class'=>'form-control'));
-							echo $this->Form->input('grupo_id');
+							echo $this->Form->input('groups_id');
 							
 							
 							echo $this->Form->input('username', array('class'=>'form-control'));
@@ -27,10 +30,11 @@
 					<center>
 					</div>
 	</div>
+	<br>
 	<div class="btn-group btn-group-justified">
 		  
-			<?php echo $this->Html->link(__('Nuevo Usuario'), array('action' => 'add'), array('class' => 'btn btn-default'), array('class' => 'btn btn-default')); ?></li>
-			<?php echo $this->Html->link(__('Lista Departamentos'), array('controller' => 'departamentos', 'action' => 'index'), array('class' => 'btn btn-default')); ?>
-			<?php echo $this->Html->link(__('Nuevo Departamento'), array('controller' => 'departamentos', 'action' => 'add'), array('class' => 'btn btn-default')); ?>
-	</div>
+			<?php echo $this->Html->link(__('Nuevo Usuario'), array('action' => 'add'), array('class' => 'btn btn-info'), array('class' => 'btn btn-default')); ?></li>
+			<?php echo $this->Html->link(__('Lista Usuarios'), array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
+			<?php echo $this->Html->link(__('Nuevo Departamento'), array('controller' => 'departamentos', 'action' => 'add'), array('class' => 'btn btn-primary')); ?>
+		</div>
 </div>

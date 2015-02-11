@@ -1,10 +1,11 @@
 <div id="General">
-<center>
-		<br><br>
-		<h2>Registro Departamentos</h2>
-		<br><br><br>
+	<center>
+		<?php echo $this->element('b4');?>
+	  </center>
 		<div class="col-lg-6">
-	
+				<br>
+					<h3>Añadir Departamento</h3>
+				<br><br>
 			<div class="bloque">
 
 				<?php echo $this->Form->create('Departamento', array('class'=>'form-horizontal', 'role'=>'form')); ?>
@@ -26,8 +27,8 @@
 		<br><br>
 		<div class="btn-group btn-group-justified">
 			  
-				<?php echo $this->Html->link(__('Nuevo Departamento'), array('action' => 'add'), array('class' => 'btn btn-default'), array('class' => 'btn btn-default')); ?></li>
-				<?php echo $this->Html->link(__('Lista Usuarios'), array('controller' => 'users', 'action' => 'index'), array('class' => 'btn btn-default')); ?>
-				<?php echo $this->Html->link(__('Nuevo Usuario'), array('controller' => 'users', 'action' => 'add'), array('class' => 'btn btn-default')); ?>
+				<?php echo $this->Html->link(__('Nuevo Departamento'), array('action' => 'add'), array('class' => 'btn btn-info')); ?></li>
+				<?php echo $this->Html->link(__('Lista Usuarios'), array('controller' => 'users', 'action' => 'index'), array('class' => 'btn btn-danger')); ?>
+				<?php echo $this->Html->link(__('Nuevo Usuario'), array('controller' => 'users', 'action' => 'add'), array('class' => 'btn btn-primary')); ?>
 		</div>
 </div>

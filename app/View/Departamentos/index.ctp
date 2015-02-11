@@ -1,14 +1,13 @@
 <div class="general">
 	<center>
+		<?php echo $this->element('b4');?>
+	  </center>
+	<center>
 	<div class="departamentos"
 			
-			<div class="page_header">
-				<center>
-				<h2>
-				<?php echo __('Lista de Departamentos'); ?></h2>
-				</center>
-				<br>
-			</div>
+			<br><br>
+			<h3>Lista General </h3>
+			<br>
 				<center>
 		<div class="col-lg-7">
 			    <table class="table table-striped table-hover">
@@ -43,11 +42,12 @@
 		<paginador><!-- etiqueta personalidad-->
 			<?php echo $this->element('paginador');?>
 		</paginador>
-		
+		<br>
+		<br>
 		<div class="btn-group btn-group-justified">
 		  
-			<?php echo $this->Html->link(__('Nuevo Departamento'), array('action' => 'add'), array('class' => 'btn btn-default'), array('class' => 'btn btn-default')); ?></li>
-			<?php echo $this->Html->link(__('Lista Usuarios'), array('controller' => 'users', 'action' => 'index'), array('class' => 'btn btn-default')); ?>
-			<?php echo $this->Html->link(__('Nuevo Usuario'), array('controller' => 'users', 'action' => 'add'), array('class' => 'btn btn-default')); ?>
+			<?php echo $this->Html->link(__('Nuevo Departamento'), array('action' => 'add'), array('class' => 'btn btn-info')); ?></li>
+			<?php echo $this->Html->link(__('Lista Usuarios'), array('controller' => 'users', 'action' => 'index'), array('class' => 'btn btn-danger')); ?>
+			<?php echo $this->Html->link(__('Nuevo Usuario'), array('controller' => 'users', 'action' => 'add'), array('class' => 'btn btn-primary')); ?>
 		</div>
 <div>

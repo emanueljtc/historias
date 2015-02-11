@@ -25,9 +25,10 @@
 	h3
 	{
 		font-size: 2em;
-		font-family: 'paragon', sans-serif;
+		font-family: 'Arial', sans-serif;
+		text-decoration: underline; 
 		font-weight: 700;
-		color: #fff;
+		color: #FFFFFF;
 
 	}
 	h4, h5, h6

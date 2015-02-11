@@ -5,6 +5,21 @@ App::uses('AppModel', 'Model');
  *
  * @property Historium $Historium
  */
+
+// Turn off error reporting
+error_reporting(0);
+
+// Report runtime errors
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+// Report all errors
+error_reporting(E_ALL);
+
+// Same as error_reporting(E_ALL);
+ini_set("error_reporting", E_ALL);
+
+// Report all errors except E_NOTICE
+error_reporting(E_ALL & ~E_NOTICE);
 class Paciente extends AppModel {
 
 /**
@@ -20,6 +35,23 @@ class Paciente extends AppModel {
  * @var string
  */
 	public $displayField = 'dni';
+	//FUNCION UPLOAD
+	public $actsAs = array(
+			'Upload.Upload' => array(
+				'foto'=> array ( 
+					'fields' => array(
+						'dir'=>'foto_dir'
+						),
+							'thumbnailMethod'=>'php',
+							'thumbnailSizes' => array(
+								'vga' => '400x400',
+								 'thumb'=>'80x80'
+								 ),
+								'deleteOnUpdate' => true,
+								'deleteFolderOnDelete' => true
+					   )
+				)
+		);
 
 /**
  * Validation rules
@@ -30,9 +62,9 @@ class Paciente extends AppModel {
 		'nombre' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Campo Requerido',
 				//'allowEmpty' => false,
-				//'required' => false,
+				'required' => true,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
@@ -40,9 +72,9 @@ class Paciente extends AppModel {
 		'apellido' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Campo Requerido',
 				//'allowEmpty' => false,
-				//'required' => false,
+				'required' => true,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
@@ -50,7 +82,7 @@ class Paciente extends AppModel {
 		'dni' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Campo Requerido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -58,7 +90,7 @@ class Paciente extends AppModel {
 			),
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
+				//'message' => 'Campo Requerido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -68,7 +100,7 @@ class Paciente extends AppModel {
 		'edad' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'Campo Numerico',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -76,7 +108,7 @@ class Paciente extends AppModel {
 			),
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Campo Requerido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -86,7 +118,27 @@ class Paciente extends AppModel {
 		'sexo' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Campo Requerido',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'nacionalidad' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				'message' => 'Campo Requerido',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'ciudad' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				'message' => 'Campo Requerido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -96,7 +148,7 @@ class Paciente extends AppModel {
 		'direccion' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Campo Requerido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -106,7 +158,7 @@ class Paciente extends AppModel {
 		'fecha_nacimiento' => array(
 			'date' => array(
 				'rule' => array('date'),
-				//'message' => 'Your custom message here',
+				'message' => 'Campo Requerido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -116,15 +168,44 @@ class Paciente extends AppModel {
 		'telefono' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'Campo Numerico',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-	);
+		'g_sanguineo' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				'message' => 'Campo Requerido',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'foto' => array(
+         'rule' => array('isValidMimeType', array('image/jpeg', 'image/png' , 'image/gif')),
+         'message' => 'El Archivo no es jpg, png ni gif'
+       ),
+		 'isBelowMaxSize'=> array(
+         'rule' => array('isBelowMaxSize', 1024),
+         'message' => 'El Archivo supera el limite de peso en MB'
+    ),
+		 'isValidExtension'=> array(
+         'rule' => array('isValidExtension', array('pdf', 'png', 'gif')),
+         'message' => 'El Archivo no tiene extension jpg, png ni gif'
+    ),
+		 
 
+		'observaciones' => array (
+				'notEmpty' => array(
+				'rule' => array('notEmpty'),
+		),
+	),
+	);
+	
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**

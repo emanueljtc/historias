@@ -1,14 +1,22 @@
 <div id= general>
+	<center>
+		<?php echo $this->element('b1');?>
+	  <center>
 	<div class="col-lg-6">
+		<br>
+			<h3>Editar Historia </h3>
+		<br>
 		<div class="bloque">
-				<center><legend><?php echo __('Editar Historia'); ?></legend></center>
-			<?php echo $this->Form->create('Historium'); ?>
+				
+			<?php echo $this->Form->create('Historium', array('type'=>'file', 'novalidate'=>'novalidate')); ?>
 				<fieldset>
 					
 				<?php
 					echo $this->Form->input('id', array('class'=>'form-control'));
 					echo $this->Form->input('paciente_id', array('class'=>'form-control','label'=>'Paciente Cedula'));
 					echo $this->Form->input('enfermedad', array('class'=>'form-control'));
+					echo $this->Form->input('foto',array('type'=>'file','label'=>'Imagen','class'=>'form-control'));
+					echo $this->Form->input('foto_dir',array('type'=>'hidden'));
 					echo $this->Form->input('observaciones', array('class'=>'form-control'));
 				?>
 				</fieldset>

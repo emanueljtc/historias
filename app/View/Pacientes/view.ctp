@@ -1,8 +1,34 @@
 <div id="general">
-<center><br><br><br><br><br><br>
+	  <center>
+		<?php echo $this->element('b2');?>
+	  <center>
 	<div class="col-lg-12">
 		<div class="bloque"> 
-		<h2><?php echo __('Paciente'); ?></h2>
+			<div class="row">
+			<div class="col col-sm-7">
+				<?php echo $this->Html->image('../files/paciente/foto/'. $paciente['Paciente']['foto_dir'].'/'.'vga_'.$paciente['Paciente']['foto']); ?>
+			</div>
+			<div class="clol col-sm-5">
+
+			<br>
+				<h3>Datos</h3>
+				<br><br>
+				
+				<strong>Nombre : <?php echo h($paciente['Paciente']['nombre']); ?> </strong> 
+				<br>
+				
+				<strong>Apellido :<?php echo h($paciente['Paciente']['apellido']); ?>&nbsp;</strong>
+				<br>
+				
+				<strong>Cedula : <?php echo h($paciente['Paciente']['dni']); ?></strong>
+				<br>
+				<strong>Sexo : <?php echo h($paciente['Paciente']['sexo']); ?></strong>
+				<br>
+				<strong>Añadido : <?php echo h($paciente['Paciente']['created']); ?></strong>
+
+			</div>
+		</div>
+		<!-- <h2><?php echo __('Paciente'); ?></h2>
 		<table class="table table-striped table-hover">
 		
 		
@@ -37,15 +63,17 @@
 			</tr>
 	    
 		</tbody>
-	</table>
+	</table> -->
 		</div>
 		</div>
 	</div>
+	<br>
+
 	<div class="btn-group btn-group-justified">
-	  
-		<?php echo $this->Html->link(__('Nuevo Usuario'), array('action' => 'add'), array('class' => 'btn btn-default'), array('class' => 'btn btn-default')); ?></li>
-		<?php echo $this->Html->link(__('Lista Departamentos'), array('controller' => 'departamentos', 'action' => 'index'), array('class' => 'btn btn-default')); ?>
-		<?php echo $this->Html->link(__('Nuevo Departamento'), array('controller' => 'departamentos', 'action' => 'add'), array('class' => 'btn btn-default')); ?>
+		  
+			<?php echo $this->Html->link(__('Nuevo Paciente'), array('action' => 'add'), array('class' => 'btn btn-info'), array('class' => 'btn btn-default')); ?></li>
+			<?php echo $this->Html->link(__('Lista Pacientes'), array('action' => 'index'), array('class' => 'btn btn-danger')); ?>
+			<?php echo $this->Html->link(__('Nueva Historia'), array('controller' => 'historia', 'action' => 'add'), array('class' => 'btn btn-primary')); ?>
 	</div>
 
 </div>

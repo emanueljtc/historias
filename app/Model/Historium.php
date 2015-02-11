@@ -5,6 +5,22 @@ App::uses('AppModel', 'Model');
  *
  * @property Paciente $Paciente
  */
+
+// Turn off error reporting
+error_reporting(0);
+
+// Report runtime errors
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+// Report all errors
+error_reporting(E_ALL);
+
+// Same as error_reporting(E_ALL);
+ini_set("error_reporting", E_ALL);
+
+// Report all errors except E_NOTICE
+error_reporting(E_ALL & ~E_NOTICE);
+
 class Historium extends AppModel {
 
 /**
@@ -13,6 +29,23 @@ class Historium extends AppModel {
  * @var string
  */
 	public $displayField = 'paciente_id';
+
+	public $actsAs = array(
+			'Upload.Upload' => array(
+				'foto'=> array ( 
+					'fields' => array(
+						'dir'=>'foto_dir'
+						),
+							'thumbnailMethod'=>'php',
+							'thumbnailSizes' => array(
+								'vga' => '400x400',
+								 'thumb'=>'80x80'
+								 ),
+								'deleteOnUpdate' => true,
+								'deleteFolderOnDelete' => true
+					   )
+				)
+		);
 
 /**
  * Validation rules
@@ -48,6 +81,26 @@ class Historium extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+		 'foto' => array(
+         'rule' => array('isValidMimeType', array('image/jpeg', 'image/png' , 'image/gif')),
+         'message' => 'El Archivo no es jpg, png ni gif'
+       ),
+		 'isBelowMaxSize'=> array(
+         'rule' => array('isBelowMaxSize', 1024),
+         'message' => 'El Archivo supera el limite de peso en MB'
+    ),
+		 'isValidExtension'=> array(
+         'rule' => array('isValidExtension', array('pdf', 'png', 'gif')),
+         'message' => 'El Archivo no tiene extension jpg, png ni gif'
+    ),
+		 
+
+		'observaciones' => array (
+				'notEmpty' => array(
+				'rule' => array('notEmpty'),
+		),
+	),
+
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
@@ -66,4 +119,5 @@ class Historium extends AppModel {
 			'order' => ''
 		)
 	);
+
 }

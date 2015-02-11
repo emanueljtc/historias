@@ -46,13 +46,16 @@
 
 	a
 	{
-		color: #fff;
+		color: #A0980C;
+		font-size: 13px;
 	}
 
 	strong, b
 	{
-		font-weight: 700;
-		color: #232323;
+		font-size: 20px;
+		font-weight: 600;
+		color: #FFFFFF;
+		text-align: justify;
 	}
 
 	h2,h4,h5,h6
@@ -106,10 +109,16 @@
 	{
 		clear: both;
 	}
-	
-	p, ul, ol, dl, table
+	p 
+		{
+			margin-bottom: -2em;
+			font-size: 18px;
+			color: white;
+		}
+	 ul, ol, dl, table
+	}
 	{
-		margin-bottom: 1em;
+		margin-bottom: -2em;
 	}
 	
 	/* Table */
@@ -701,9 +710,12 @@
 
 		#nav li
 		{
-			border-top: solid 1px rgba(0,0,0,0.25);
-			box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.075);
 			padding: 0.5em 0 0.5em 0;
+			--webkit-transition: all 5s;
+			-o-transition: all 5s;
+			transition: all 5s;
+			border-top: solid 1px rgba(0, 0, 0, 0.39);
+			
 		}
 		
 		#nav li:first-child
@@ -721,15 +733,13 @@
 		#nav li a
 		{
 			display: block;
-			padding: 0.4em 1em 0.4em 1em;
 			text-decoration: none;
-			border-radius: 0.4em;
 			outline: 0;
-			-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			-webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			-o-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			-ms-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			transition: background-color .25s ease-in-out, color .25s ease-in-out;
+			padding: 0.4em 1em 0.4em 1em;
+			text-transform: uppercase;
+			border-radius: 0.4em;
+			-webkit-transition: all 0.3s ease-out;
+			
 		}
 
 		#nav li.current a
@@ -742,9 +752,9 @@
 		}
 
 		#nav li:hover a
-		{
-			background-color: rgba(255,255,255,0.1);
+		{	box-shadow: 15em 0 rgba(163, 163, 163, 0.82) inset;
 			color: #fff;
+
 		}
 
 /*********************************************************************************/

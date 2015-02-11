@@ -1,9 +1,39 @@
 <div id="general">
-<center><br><br><br><br><br><br>
+	<center>
+		<?php echo $this->element('b1');?>
+	  <center>
 	<div class="col-lg-12">
+		
+		<br>
+			<h3>Detalles de Historia</h3>
+		<br>
 		<div class="bloque"> 
-		<h2><?php echo __('Historia del Paciente'); ?></h2>
-		<table class="table table-striped table-hover">
+		
+		<div class="row">
+			<div class="col col-sm-7">
+				<?php echo $this->Html->image('../files/historium/foto/'. $historium['Historium']['foto_dir'].'/'.'vga_'.$historium['Historium']['foto']); ?>
+			</div>
+			<div class="clol col-sm-5">
+
+			<br>
+				<h3>Datos</h3>
+				<br><br>
+				
+				<strong>Nombre : <?php echo $this->Html->link($historium['Paciente']['nombre'], array('controller' => 'pacientes', 'action' => 'view', $historium['Paciente']['id'])); ?> </strong> 
+				<br>
+				
+				<strong>Cedula : <?php echo $this->Html->link($historium['Paciente']['dni'], array('controller' => 'pacientes', 'action' => 'view', $historium['Paciente']['id'])); ?> </strong>
+				<br>
+				
+				<strong>Enfermedad : <?php echo h($historium['Historium']['enfermedad']); ?></strong>
+				<br>
+				<strong>Observaciones : <?php echo h($historium['Historium']['observaciones']); ?></strong>
+				<br>
+				<strong>Ultima Cita : <?php echo h($historium['Historium']['modified']); ?></strong>
+
+			</div>
+		</div>
+		<!-- <table class="table table-striped table-hover">
 		
 		
 		<br><br>
@@ -12,6 +42,7 @@
 				
 				<td>Paciente</td>
 				<td>Enfermedad</td>
+				<td>Imagen</td>
 				<td>Observaciones</td>
 				<td>Ultima Cita</td>
 				
@@ -24,6 +55,7 @@
 				
 				<td><?php echo $this->Html->link($historium['Paciente']['dni'], array('controller' => 'pacientes', 'action' => 'view', $historium['Paciente']['id'])); ?>&nbsp;</td>
 				<td><?php echo h($historium['Historium']['enfermedad']); ?>&nbsp;</td>
+				<td><?php echo $this->Html->image('../files/historium/foto/'. $historium['Historium']['foto_dir'].'/'.'vga_'.$historium['Historium']['foto']); ?>&nbsp;</td>
 				<td><?php echo h($historium['Historium']['observaciones']); ?>&nbsp;</td>
 				<td><?php echo h($historium['Historium']['modified']); ?>&nbsp;</td>
 			
@@ -32,15 +64,15 @@
 			</tr>
 	    
 		</tbody>
-	</table>
+	</table> -->
 		</div>
 		</div>
 	</div>
 	<div class="btn-group btn-group-justified">
 	  
-		<?php echo $this->Html->link(__('Editar Historia'), array('action' => 'edit', $historium['Historium']['id']), array('class' => 'btn btn-default')); ?>
-		<?php echo $this->Html->link(__('Lista Historias'), array('action' => 'index'), array('class' => 'btn btn-default')); ?>
-		<?php echo $this->Html->link(__('Nueva Historia'), array('action' => 'add'), array('class' => 'btn btn-default')); ?>
+		<?php echo $this->Html->link(__('Lista Historias'), array('action' => 'index'), array('class' => 'btn btn-info')); ?>
+		<?php echo $this->Html->link(__('Nueva Historia'), array('action' => 'add'), array('class' => 'btn btn-danger')); ?>
+		<?php echo $this->Html->link(__('Imprimir'), array('action' => 'view', $historium['Historium']['id'].'.pdf' ),array('class' => 'btn btn-sm btn-primary')); ?>
 	</div>
 
 </div>

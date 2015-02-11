@@ -39,17 +39,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         echo $this->Html->css(array('hover.css'));
       	echo $this->Html->css(array('style-desktop'));
        	echo $this->Html->css(array('style-wide.css'));
+       	
        /* -------------------------------------------*/
        echo $this->Html->script(array('bootstrap.min'));
-       echo $this->Html->script(array('jquery.min'));
+       echo $this->Html->script(array('jquery-1.8.3.min'));
        echo $this->Html->script(array('skel.min'));
        echo $this->Html->script(array('skel-layers.min'));
        echo $this->Html->script(array('init.js'));
        echo $this->Html->script(array('docs.min.js'));
+       
        // echo $this->Html->script(array('',''));
        // echo $this->Html->script(array('modernizr.foundation.js'));
        
 		?>
+
   </head>
 <body class="left-sidebar">
 
@@ -81,7 +84,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					<div id="sidebar">
 					
 						<!-- Logo -->
-							<h1 id="logo"><a href="#">Historias Medicas</a></h1>
+							<h1 id="logo"><marquee loop="1" SCROLLAMOUNT="7" behavior = "slide" direction="up"><img src="/historias/app/webroot/img/logo.png" alt="HM" width="189" height="135"></marquee></h1>
 					
 						<!-- Nav -->
 							<nav id="nav">
@@ -102,6 +105,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 									<?php echo $this->Html->link(__('Historias'), array('controller' => 'historia', 'action' => 'index')); ?>
 									</li>
 									<li>
+									    <a href="http://localhost/Reporte/general/registros/">Estadistica</a>
+									<li>
 									<?php echo $this->Html->link(__('Salir'), array('controller' => 'users', 'action' => 'logout')); ?>
 									</li>
 								</ul>
@@ -111,12 +116,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<!-- Search -->
 							<section class="box search">
 								<form method="post" action="#">
-									<input type="text" class="text" name="search" placeholder="Search" />
+									<input type="text" class="text" name="search" placeholder="Buscar por Cedula" />
 								</form>
 							</section>
 					<!-- Creado -->
 							<ul id="copyright">
-								<li>&copy; Creado por :</li><li><a href="https://www.facebook.com/emanuel.torresclemente">Emanuel Torres Clemente</a></li>
+								<li>&copy; Creado por :</li><li><a href="https://www.facebook.com/emanuel.torresclemente">Emanuel Torres C.</a></li>
 							</ul>
 
 					</div>

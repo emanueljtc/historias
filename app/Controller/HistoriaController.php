@@ -13,7 +13,12 @@ class HistoriaController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
+	public $helpers = array('Html','Form','Time','Js');
+	public $components = array('Paginator', 'Session','RequestHandler');
+	public $paginate = array (
+			'limit' => 4,
+			'order' => array('Historium.id' => 'asc')
+			);
 
 /**
  * index method
@@ -21,8 +26,9 @@ class HistoriaController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Historium->recursive = 0;
-		$this->set('historia', $this->Paginator->paginate());
+		$this->set('historia',$this->Historium->find('all'));
+        	$this->Paginator->settings =$this->paginate;
+		    $this->set('historia',$this->paginate());
 	}
 
 /**
@@ -34,7 +40,7 @@ class HistoriaController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Historium->exists($id)) {
-			throw new NotFoundException(__('Invalid historium'));
+			throw new NotFoundException(__('Historia no Existe'));
 		}
 		$options = array('conditions' => array('Historium.' . $this->Historium->primaryKey => $id));
 		$this->set('historium', $this->Historium->find('first', $options));
@@ -49,10 +55,10 @@ class HistoriaController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Historium->create();
 			if ($this->Historium->save($this->request->data)) {
-				$this->Session->setFlash(__('The historium has been saved.'));
+				$this->Session->setFlash(__('Historia Guardada.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The historium could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Historia no Guardada, Intente de Nuevo.'));
 			}
 		}
 		$pacientes = $this->Historium->Paciente->find('list');
@@ -68,14 +74,14 @@ class HistoriaController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Historium->exists($id)) {
-			throw new NotFoundException(__('Invalid historium'));
+			throw new NotFoundException(__('Historia no Existe'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Historium->save($this->request->data)) {
-				$this->Session->setFlash(__('The historium has been saved.'));
+				$this->Session->setFlash(__('Historia Actualizada.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The historium could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Historia no Actualizada, Intente de Nuevo.'));
 			}
 		} else {
 			$options = array('conditions' => array('Historium.' . $this->Historium->primaryKey => $id));
@@ -95,13 +101,13 @@ class HistoriaController extends AppController {
 	public function delete($id = null) {
 		$this->Historium->id = $id;
 		if (!$this->Historium->exists()) {
-			throw new NotFoundException(__('Invalid historium'));
+			throw new NotFoundException(__('Historia no Existe'));
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Historium->delete()) {
-			$this->Session->setFlash(__('The historium has been deleted.'));
+			$this->Session->setFlash(__('Historia Eliminada.'));
 		} else {
-			$this->Session->setFlash(__('The historium could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('Historia no Eliminada, Intente de nuevo.'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

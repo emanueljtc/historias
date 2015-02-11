@@ -1,13 +1,20 @@
-<p>
-		<?php
-		echo $this->Paginator->counter(array(
-		'format' => __('Pagina {:page} de  {:pages}, Observando {:current} registros de cada {:count} total, apartir del registro {:start}, finalizando en  {:end}')
-		));
-		?>	
-		<nav>
-		  <ul class="pagination">
-		    <li><?php echo $this->Paginator->prev('< ' . __('Anterior'), array(), null, array('class' => 'prev disabled')); ?></li>
-		    <li><?php echo $this->Paginator->numbers(array('separator' => '')); ?></li>
-		    <li><?php echo $this->Paginator->next(__('Siguiente') . ' >', array(), null, array('class' => 'next disabled')); ?></li>
-		  </ul>
-		</nav>
+<p> 
+    <?php echo $this->Paginator->counter(array('format' => 'Pagina {:page} de {:pages}, Mostrando {:current} registros de {:count}'));?>
+
+	</p>
+		<ul class="pagination">
+       
+       <li>
+        <?php echo $this->Paginator->prev('<'. __('< '), 
+        	array('tag'=>false),null, array('class'=>'prev disable'));?>
+        </li>
+        <?php echo $this->Paginator->numbers(array('separator'=>' ','tag'=>'li','currentTag'=> 'a', 
+        					'currentClass'=>'active'));?>
+        <li>
+        <?php echo $this->Paginator->next(__(' >').'>',
+        		array('tag'=> false), null, array('class'=>'next disabled'));
+        		?>
+		</li>
+
+    
+	</ul>

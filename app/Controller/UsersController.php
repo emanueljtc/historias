@@ -56,7 +56,7 @@ class UsersController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->User->exists($id)) {
-			throw new NotFoundException(__('Invalid user'));
+			throw new NotFoundException(__('Usuario Invalido'));
 		}
 		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 		$this->set('user', $this->User->find('first', $options));
@@ -71,10 +71,10 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved.'));
+				$this->Session->setFlash(__('Usuario Guardado.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El usuario no ha sido guardado. Intente de nuevo'));
 			}
 		}
 		$groups = $this->User->Group->find('list');
@@ -91,22 +91,22 @@ class UsersController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->User->exists($id)) {
-			throw new NotFoundException(__('Invalid user'));
+			throw new NotFoundException(__('Usuario Invalido'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved.'));
+				$this->Session->setFlash(__('Usuario Actualizado.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Usuario no Actualizado, Intente de nuevo'));
 			}
 		} else {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 			$this->request->data = $this->User->find('first', $options);
 		}
-		$grupos = $this->User->Grupo->find('list');
+		$groups = $this->User->Group->find('list');
 		$departamentos = $this->User->Departamento->find('list');
-		$this->set(compact('grupos', 'departamentos'));
+		$this->set(compact('groups', 'departamentos'));
 	}
 
 /**
@@ -119,13 +119,13 @@ class UsersController extends AppController {
 	public function delete($id = null) {
 		$this->User->id = $id;
 		if (!$this->User->exists()) {
-			throw new NotFoundException(__('Invalid user'));
+			throw new NotFoundException(__('Usuario Invalido'));
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->User->delete()) {
-			$this->Session->setFlash(__('The user has been deleted.'));
+			$this->Session->setFlash(__('Usuario Borrado'));
 		} else {
-			$this->Session->setFlash(__('The user could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('Usuario no Borrado, Intente de nuevo'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

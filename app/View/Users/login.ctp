@@ -1,6 +1,8 @@
 <?php echo $this->Html->css(array('login'));?>
 <center>
-<h3>Control y Gesti&oacuten de Historias M&eacutedicas</h3>
+		<?php echo $this->element('b5');?>
+	  </center>
+	  
 <br><br><br><br>
 <div class="login">
 	<div class="login_interno">
